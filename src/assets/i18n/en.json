@@ -1,0 +1,11 @@
+{
+    "home": {
+        "deposit" : "Deposit",
+        "loan": "Loans",
+        "service" : "Services",
+        "promotion": "Promotions",
+        "branch" : "Branches"
+    }
+
+
+}

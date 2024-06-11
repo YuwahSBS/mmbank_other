@@ -1,0 +1,82 @@
+.animate-center{
+    height: 70px !important;
+    z-index:0;
+  }
+  
+  ul.listtwo li{
+    line-height: 30px;
+  }
+
+  .benefit h3{
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .inner .nav-pills .nav-item a.nav-link{
+    font-size:18px;
+    margin-bottom:40px;
+  }
+  
+  .inner .nav-pills .nav-item .nav-link.active{
+    background-color: #405DAB;
+    color: #fff;
+  }
+  
+  .inner .nav-pills .nav-item .nav-link{
+    padding: 12px 25px;
+  }
+  
+  .inner .nav-pills .nav-item .nav-link{
+    border-radius: 40px !important;
+  }
+  
+  section.inner{
+    padding: 60px 0 60px 0;
+  }
+  .bg-blue{
+    padding: 100px 0 90px 0 !important;
+  }
+  p.sub-head{
+    color:#398CD0;
+    font-weight:500;
+  }
+  
+  .interest-cal{
+    background-image: url(../../../assets/img/interest-calc.png);
+    height: 350px;
+    background-repeat: no-repeat;
+  }
+  .form-control{
+    margin-bottom:15px;
+  }
+  
+  .inner h2{
+    margin-top:15px;
+  }
+  
+  .accordion{
+    .item:before{
+      background: unset !important;
+    }
+    .item p{
+      color: #405DAB;
+    }
+    .item{
+      background:transparent;
+      font-size:17px !important;
+      font-weight:500 !important;
+      margin: unset !important;
+      padding: unset !important;
+    }
+  }
+
+  .loan-fact{
+    margin-top:-119px;
+  }
+
+  .page-header{
+    min-height: 80vh !important;
+  }
+
+
+  

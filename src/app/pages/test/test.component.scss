@@ -1,0 +1,13 @@
+img{
+  width:300px;
+}
+
+.owl-stage {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  }
+  .owl-item img {
+  width: auto !important;
+  }

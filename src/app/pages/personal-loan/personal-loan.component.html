@@ -1,0 +1,643 @@
+<app-navbar></app-navbar>
+<div class="page-header min-vh-100" style="background-image: url(../../../assets/img/personal_cover.png);" loading="lazy">
+    <span class="mask bg-gradient-dark opacity-5"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
+          <h1 class="text-white mb-4">CHASE YOUR DREAMS WITH MMBANK</h1>
+          <p class="text-white opacity-8 lead pe-5 me-5">Loreum isump nerio bserro bserop naeep vgrgg rbrbrb
+            doejrr jerrop naerop berry</p>
+          <div class="buttons">
+            <button type="button" class="btn btn-white mt-4">Learn More</button>
+            <!-- <button type="button" class="btn text-white shadow-none mt-4">Read more</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="py-4 inner">
+    <div class="container">
+        <div class="row text-center justify-content-center">
+            <div class="col-lg-6">
+            <h2>Personal Banking</h2>
+            </div>
+        </div>
+        <div class="row text-center justify-content-center">
+            <div class="col-lg-8">
+              
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" [class.active]="activeTab === 'Personal'" (click)="selectTab('Personal')">
+                      <img src="../../../assets/img/personal1.png" alt="" style="padding:4px;">
+                      <br/>
+                      All Personal Banking</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" [class.active]="activeTab === 'Save'" (click)="selectTab('Save')">
+                      <img src="../../../assets/img/personal2.png" alt="">
+                      <br/>
+                      Wants to save</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" [class.active]="activeTab === 'Borrow'" (click)="selectTab('Borrow')">
+                      <img src="../../../assets/img/personal3.png" alt="">
+                      <br/>
+                      Wants to borrow</a>
+                  </li>
+                  </ul>
+                  
+              
+            </div>
+        </div>
+          <div class="tab-content mt-3">
+            <div *ngIf="activeTab === 'Personal'">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan1.png" />
+                    <div class="title-info">
+                      <h2>Business Loan</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                      <div class="info">
+                        <h2>Home Renovation Loan</h2>
+                        <p>
+                          Saving account with attractive rate for those older than 60 years old. 
+                        </p>
+                        <ul class="listone">
+                          <li>Up to 7.5% p.a.</li>
+                          <li>Unlimited Withdrawal and Deposit</li>
+                          <li>Manage your account online</li>
+                        </ul>
+
+                        <a class="explore" href="loan">Explore detail
+                          <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                        </a>
+                        
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan2.png" />
+                    <div class="title-info">
+                      <h2>Education Loan</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                    <div class="info">
+                      <h2>Education Loan</h2>
+                      <p>
+                        Saving account with attractive rate for those older than 60 years old. 
+                      </p>
+                      <ul class="listone">
+                        <li>Up to 7.5% p.a.</li>
+                        <li>Unlimited Withdrawal and Deposit</li>
+                        <li>Manage your account online</li>
+                      </ul>
+
+                      <a class="explore" href="loan">Explore detail
+                        <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan3.png" />
+                    <div class="title-info">
+                      <h2>Gold Financing Loan</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                    <div class="info">
+                      <h2>Gold Financing Loan</h2>
+                      <p>
+                        Saving account with attractive rate for those older than 60 years old. 
+                      </p>
+                      <ul class="listone">
+                        <li>Up to 7.5% p.a.</li>
+                        <li>Unlimited Withdrawal and Deposit</li>
+                        <li>Manage your account online</li>
+                      </ul>
+
+                      <a class="explore" href="loan">Explore detail
+                        <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan1.png" />
+                    <div class="title-info">
+                      <h2>Car Loan</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                      <div class="info">
+                        <h2>Car Loan</h2>
+                        <p>
+                          Saving account with attractive rate for those older than 60 years old. 
+                        </p>
+                        <ul class="listone">
+                          <li>Up to 7.5% p.a.</li>
+                          <li>Unlimited Withdrawal and Deposit</li>
+                          <li>Manage your account online</li>
+                        </ul>
+
+                        <a class="explore" href="loan">Explore detail
+                          <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                        </a>
+                        
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan2.png" />
+                    <div class="title-info">
+                      <h2>Home Loan</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                    <div class="info">
+                      <h2>Home Loan</h2>
+                      <p>
+                        Saving account with attractive rate for those older than 60 years old. 
+                      </p>
+                      <ul class="listone">
+                        <li>Up to 7.5% p.a.</li>
+                        <li>Unlimited Withdrawal and Deposit</li>
+                        <li>Manage your account online</li>
+                      </ul>
+
+                      <a class="explore" href="loan">Explore detail
+                        <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan3.png" />
+                    <div class="title-info">
+                      <h2>Call Account Deposit</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                    <div class="info">
+                      <h2>Call Account Deposit</h2>
+                      <p>
+                        Saving account with attractive rate for those older than 60 years old. 
+                      </p>
+                      <ul class="listone">
+                        <li>Up to 7.5% p.a.</li>
+                        <li>Unlimited Withdrawal and Deposit</li>
+                        <li>Manage your account online</li>
+                      </ul>
+
+                      <a class="explore" href="loan">Explore detail
+                        <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan1.png" />
+                    <div class="title-info">
+                      <h2>Metro Max Account</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                      <div class="info">
+                        <h2>Metro Max Account</h2>
+                        <p>
+                          Saving account with attractive rate for those older than 60 years old. 
+                        </p>
+                        <ul class="listone">
+                          <li>Up to 7.5% p.a.</li>
+                          <li>Unlimited Withdrawal and Deposit</li>
+                          <li>Manage your account online</li>
+                        </ul>
+
+                        <a class="explore" href="loan">Explore detail
+                          <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                        </a>
+                        
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan2.png" />
+                    <div class="title-info">
+                      <h2>Metro Student Saver</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                    <div class="info">
+                      <h2>Metro Student Saver</h2>
+                      <p>
+                        Saving account with attractive rate for those older than 60 years old. 
+                      </p>
+                      <ul class="listone">
+                        <li>Up to 7.5% p.a.</li>
+                        <li>Unlimited Withdrawal and Deposit</li>
+                        <li>Manage your account online</li>
+                      </ul>
+
+                      <a class="explore" href="loan">Explore detail
+                        <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan3.png" />
+                    <div class="title-info">
+                      <h2>Saving Account</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                    <div class="info">
+                      <h2>Saving Account</h2>
+                      <p>
+                        Saving account with attractive rate for those older than 60 years old. 
+                      </p>
+                      <ul class="listone">
+                        <li>Up to 7.5% p.a.</li>
+                        <li>Unlimited Withdrawal and Deposit</li>
+                        <li>Manage your account online</li>
+                      </ul>
+
+                      <a class="explore" href="loan">Explore detail
+                        <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div *ngIf="activeTab === 'Save'">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan2.png" />
+                    <div class="title-info">
+                      <h2>Metro Student Saver</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                    <div class="info">
+                      <h2>Metro Student Saver</h2>
+                      <p>
+                        Saving account with attractive rate for those older than 60 years old. 
+                      </p>
+                      <ul class="listone">
+                        <li>Up to 7.5% p.a.</li>
+                        <li>Unlimited Withdrawal and Deposit</li>
+                        <li>Manage your account online</li>
+                      </ul>
+
+                      <a class="explore" href="loan">Explore detail
+                        <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan3.png" />
+                    <div class="title-info">
+                      <h2>Saving Account</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                    <div class="info">
+                      <h2>Saving Account</h2>
+                      <p>
+                        Saving account with attractive rate for those older than 60 years old. 
+                      </p>
+                      <ul class="listone">
+                        <li>Up to 7.5% p.a.</li>
+                        <li>Unlimited Withdrawal and Deposit</li>
+                        <li>Manage your account online</li>
+                      </ul>
+
+                      <a class="explore" href="loan">Explore detail
+                        <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan3.png" />
+                    <div class="title-info">
+                      <h2>Call Account Deposit</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                    <div class="info">
+                      <h2>Call Account Deposit</h2>
+                      <p>
+                        Saving account with attractive rate for those older than 60 years old. 
+                      </p>
+                      <ul class="listone">
+                        <li>Up to 7.5% p.a.</li>
+                        <li>Unlimited Withdrawal and Deposit</li>
+                        <li>Manage your account online</li>
+                      </ul>
+
+                      <a class="explore" href="loan">Explore detail
+                        <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan1.png" />
+                    <div class="title-info">
+                      <h2>Metro Max Account</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                      <div class="info">
+                        <h2>Metro Max Account</h2>
+                        <p>
+                          Saving account with attractive rate for those older than 60 years old. 
+                        </p>
+                        <ul class="listone">
+                          <li>Up to 7.5% p.a.</li>
+                          <li>Unlimited Withdrawal and Deposit</li>
+                          <li>Manage your account online</li>
+                        </ul>
+
+                        <a class="explore" href="loan">Explore detail
+                          <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                        </a>
+                        
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan1.png" />
+                    <div class="title-info">
+                      <h2>Call Account</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                      <div class="info">
+                        <h2>Call Account</h2>
+                        <p>
+                          Saving account with attractive rate for those older than 60 years old. 
+                        </p>
+                        <ul class="listone">
+                          <li>Up to 7.5% p.a.</li>
+                          <li>Unlimited Withdrawal and Deposit</li>
+                          <li>Manage your account online</li>
+                        </ul>
+
+                        <a class="explore" href="loan">Explore detail
+                          <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                        </a>
+                        
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan1.png" />
+                    <div class="title-info">
+                      <h2>Fixed Deposit</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                      <div class="info">
+                        <h2>Fixed Deposit</h2>
+                        <p>
+                          Saving account with attractive rate for those older than 60 years old. 
+                        </p>
+                        <ul class="listone">
+                          <li>Up to 7.5% p.a.</li>
+                          <li>Unlimited Withdrawal and Deposit</li>
+                          <li>Manage your account online</li>
+                        </ul>
+
+                        <a class="explore" href="loan">Explore detail
+                          <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                        </a>
+                        
+                      </div>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+            <div *ngIf="activeTab === 'Borrow'">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan1.png" />
+                    <div class="title-info">
+                      <h2>Business Loan</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                      <div class="info">
+                        <h2>Business Loan</h2>
+                        <p>
+                          Saving account with attractive rate for those older than 60 years old. 
+                        </p>
+                        <ul class="listone">
+                          <li>Up to 7.5% p.a.</li>
+                          <li>Unlimited Withdrawal and Deposit</li>
+                          <li>Manage your account online</li>
+                        </ul>
+
+                        <a class="explore" href="loan">Explore detail
+                          <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                        </a>
+                        
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan2.png" />
+                    <div class="title-info">
+                      <h2>Education Loan</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                    <div class="info">
+                      <h2>Education Loan</h2>
+                      <p>
+                        Saving account with attractive rate for those older than 60 years old. 
+                      </p>
+                      <ul class="listone">
+                        <li>Up to 7.5% p.a.</li>
+                        <li>Unlimited Withdrawal and Deposit</li>
+                        <li>Manage your account online</li>
+                      </ul>
+
+                      <a class="explore" href="loan">Explore detail
+                        <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan3.png" />
+                    <div class="title-info">
+                      <h2>Gold Financing Loan</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                    <div class="info">
+                      <h2>Gold Financing Loan</h2>
+                      <p>
+                        Saving account with attractive rate for those older than 60 years old. 
+                      </p>
+                      <ul class="listone">
+                        <li>Up to 7.5% p.a.</li>
+                        <li>Unlimited Withdrawal and Deposit</li>
+                        <li>Manage your account online</li>
+                      </ul>
+
+                      <a class="explore" href="loan">Explore detail
+                        <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan1.png" />
+                    <div class="title-info">
+                      <h2>Car Loan</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                      <div class="info">
+                        <h2>Car Loan</h2>
+                        <p>
+                          Saving account with attractive rate for those older than 60 years old. 
+                        </p>
+                        <ul class="listone">
+                          <li>Up to 7.5% p.a.</li>
+                          <li>Unlimited Withdrawal and Deposit</li>
+                          <li>Manage your account online</li>
+                        </ul>
+
+                        <a class="explore" href="loan">Explore detail
+                          <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                        </a>
+                        
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan2.png" />
+                    <div class="title-info">
+                      <h2>Home Loan</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                    <div class="info">
+                      <h2>Home Loan</h2>
+                      <p>
+                        Saving account with attractive rate for those older than 60 years old. 
+                      </p>
+                      <ul class="listone">
+                        <li>Up to 7.5% p.a.</li>
+                        <li>Unlimited Withdrawal and Deposit</li>
+                        <li>Manage your account online</li>
+                      </ul>
+
+                      <a class="explore" href="loan">Explore detail
+                        <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item">
+                    <img src="../../../assets/img/loan3.png" />
+                    <div class="title-info">
+                      <h2>HP Loan</h2>
+                      <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                    </div>
+                      
+                    <div class="info">
+                      <h2>HP Loan</h2>
+                      <p>
+                        Saving account with attractive rate for those older than 60 years old. 
+                      </p>
+                      <ul class="listone">
+                        <li>Up to 7.5% p.a.</li>
+                        <li>Unlimited Withdrawal and Deposit</li>
+                        <li>Manage your account online</li>
+                      </ul>
+
+                      <a class="explore" href="loan">Explore detail
+                        <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="col-md-12">
+        <inner-footer></inner-footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- <button class="btn btn-block btn-success mb-3" (click)="load()">
+    infinite
+  </button> -->
+
+  <!-- <div class="overlay">
+    <div class="overlay__inner">
+        <div class="overlay__content"><span class="spinner"></span></div>
+    </div>
+</div> -->
+
+<app-loading *ngIf="isLoading"></app-loading>

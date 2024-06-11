@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+.carousel-control-prev{
+    display:none !important;
+}
+.carousel-control-next{
+  display:none !important;
+}
+
+.carousel-indicators{
+    justify-content:left !important;
+    margin-right:unset !important;
+    margin-left: unset !important;
+}
+
+.carousel-inner{
+    margin-bottom:70px !important;
+}
+
+.scrolled, .scrolled_{
+    background-color: #405dab !important;
+}
+
+// #deposit{
+//     .carousel-inner{
+//         margin-bottom:0px !important;
+//     }
+//     .carousel-indicators{
+//         bottom: 40px !important;
+//     }
+// }
+
+// @media (max-width: 767px) {
+//     .navbar-toggler{
+//         display:none;
+//     }
+// }
+
+.owl-carousel .owl-stage {
+    display: flex;
+    }
+    
+    .owl-item {
+    width: max-content !important;
+    }
+    
+    .item {
+    width: max-content;
+    }
+    
+    .owl-carousel .owl-item img {
+    width: auto;
+    max-height: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    nav#navbar.scrolled_{
+        background-color: #405dab !important;
+    }

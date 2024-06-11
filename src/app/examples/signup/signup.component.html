@@ -1,0 +1,42 @@
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('./assets/img/banner.png');">
+        <div class="filter"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 ml-auto mr-auto">
+                      <div class="card card-register">
+                          <h3 class="title">Welcome to Metro Bank</h3>
+                          
+                          <form [formGroup]="myForm" class="register-form" (ngSubmit)="verify()">
+                             
+
+                              <label>Enter password to View Homepage</label>
+                              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                      <i class="nc-icon nc-key-25"></i>
+                                  </span>
+                                </div>
+                                  <!-- <input formControlName="txt1" type="text" class="form-control" placeholder="Password" (focus)="focus1=true" (blur)="focus1=false" #txt1 type="text" (input)="onInput($event)"> -->
+                                  <input autofocus class="form-control" id="psw" type="text" name="name" placeholder="Password here"
+                                  formControlName="psw" [ngClass]="{
+                                                        'is-invalid' : submitted &&
+                                                        f['psw'].errors }" />
+                              </div>
+                              <div *ngIf="submitted && f['psw'].errors">
+                                <div *ngIf="f['psw'].errors.required">Password is required</div>
+                              </div>
+                              <!-- <div *ngIf="submitted && wrongPassword">
+                                Incorrect password
+                              </div> -->
+                              <div *ngIf="submitted && f['psw'].errors?.incorrectPassword">
+                                Incorrect password
+                              </div>
+                              <button class="btn btn-danger btn-block btn-round" type="submit">Login to View Homepage</button>
+                          </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

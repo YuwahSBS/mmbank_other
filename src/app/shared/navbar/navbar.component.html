@@ -1,0 +1,54 @@
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top nav-down" [class.scrolled]="scrolled">
+    <div class="container">
+        <!-- <div class="navbar-translate">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="../../../assets/img/logo-white.png" alt="">
+                </a>
+            </div>
+            
+            <button aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-burger" data-target="#navbarToggler" data-toggle="collapse" type="button" (click)="isCollapsed = !isCollapsed">
+                <span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+        </div> -->
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="#">
+                <img src="../../../assets/img/logo-white.png" alt="">
+            </a>
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="/personal" class="nav-link">Personal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sme">SME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Coporate</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" target="_blank" class="nav-link">About Us</a>
+                </li>
+            </ul>
+            <!-- <p class="language-container"> <img src=" assets/icon/world.png " class="world" />
+                <span *ngIf="language == 'en'"> English </span>
+                <span *ngIf="language != 'en'"> မြန်မာ </span>
+                <img src=" assets/icon/down.png " class="down">
+                <span class="box-container">
+                    <span class="box_">
+                        <p *ngFor=" let language of languages " (click)=" switchLanguage(language) ">
+                            <span *ngIf="language == 'en'">English</span>
+                            <span *ngIf="language != 'en'">မြန်မာ</span>
+                        </p>
+
+                    </span>
+                </span>
+            </p> -->
+        </div>
+    </div>
+</nav>

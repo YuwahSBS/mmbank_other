@@ -1,0 +1,37 @@
+.inner-footer{
+    background: rgb(64,93,171);
+    background: linear-gradient(90deg, rgba(64,93,171,1) 0%, rgba(57,140,208,1) 100%);
+    padding: 20px;
+    margin: 30px 0 60px 0;
+    border-radius: 37px;
+    color: #fff;
+    p{
+        color: #fff;
+    }
+    .footerlink{
+        div{
+            border-right: 1px solid #405DAB;
+            padding: 0 10px 0 10px;
+        }
+        
+    }
+    .footerlink{
+        div:last-child{
+            border-right: unset;
+        }
+        
+    }
+}
+
+@media (max-width: 767px) {
+
+    .inner-footer{
+        padding: 10px;
+    }
+    .inner-footer p{
+        font-size:12px;
+    }
+    .inner-footer .footerlink div{
+        padding: 0 7px;
+    }
+}
