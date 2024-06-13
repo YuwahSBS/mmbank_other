@@ -143,10 +143,20 @@ transform: translate(-50%, -50%);
     background-color: #405DAB !important;
 }
 
+.control{
+  margin-bottom:20px;
+  label{
+    font-size: 16px;
+    font-weight: 600;
+    color: #405dab;
+  }
+}
+
 .form-control{
-    margin-bottom: 15px;
+    margin-bottom: 5px !important;
     border: 1px solid #405dab7d;
-    color: #405dab7d;
+    color: #405dabde !important;
+    font-weight: 500 !important;
   }
 
   ::placeholder {
@@ -156,6 +166,21 @@ transform: translate(-50%, -50%);
   
   ::-ms-input-placeholder { /* Edge 12 -18 */
     color: #405dab7d;
+  }
+
+  .finalamt{
+    font-size:26px;
+    font-weight:700;
+    color:#405DAB;
+  }
+
+  .interest-cal{
+    background-image: url(../img/interest-calc.png);
+    height: 350px;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
 
   //image animate
@@ -222,7 +247,7 @@ transform: translate(-50%, -50%);
   }
   .item p {
   color: #fff;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 10px 20px;
   }
   .more-btn {
     display: inline-block;
@@ -243,7 +268,14 @@ transform: translate(-50%, -50%);
 
   .title-info{
     position: absolute;
-    bottom:0;
+    bottom:15px;
+    a{
+      color:#fff;
+      padding: 0 20px 20px;
+    }
+    a:hover{
+      color: #fff;
+    }
   }
 
   .item::before{
@@ -352,4 +384,33 @@ transform: translate(-50%, -50%);
   .table td:last-child{
     border-right: unset;
   }
+
+  .invalid-feedback{
+    width: 100%;
+    margin-top: .25rem;
+    font-size: .9em;
+    color: #dc3545;
+    display:block;
+    font-weight:400;
+  }
+
+  .form-control.is-invalid{
+    background-image: unset !important;
+  }
+
+  .bx-fade-right, .bx-fade-right-hover:hover {
+    animation: fade-right 1.5s infinite linear;
+}
+
+@keyframes fade-right {
+  0% {
+      transform: translate(0);
+      opacity: 1
+  }
+
+  75% {
+      transform: translate(20px);
+      opacity: 1
+  }
+}
 

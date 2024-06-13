@@ -7,7 +7,7 @@ import { DepositComponent } from './deposit/deposit.component';
 import { NavbarComponent } from 'app/shared/navbar/navbar.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { AgmCoreModule } from '@agm/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { PersonalLoanComponent } from './personal-loan/personal-loan.component';
 import { InnerFooterComponent } from 'app/components/inner-footer/inner-footer.component';
@@ -16,6 +16,7 @@ import { PageDepositComponent } from './page-deposit/page-deposit.component';
 import { PersonalSmeComponent } from './personal-sme/personal-sme.component';
 import { LoadingComponent } from 'app/shared/loading/loading.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { SecureTermComponent } from './loan/secure-term/secure-term.component';
 
 
 @NgModule({
@@ -30,10 +31,12 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
     PageDepositComponent,
     PersonalSmeComponent,
     LoadingComponent,
-    ComingSoonComponent
+    ComingSoonComponent,
+    SecureTermComponent
   ],
   imports: [
     CarouselModule,
+    ReactiveFormsModule,
     FormsModule,
     CommonModule,
     NgbModule,

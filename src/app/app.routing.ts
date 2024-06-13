@@ -19,6 +19,7 @@ import { PageDepositComponent } from './pages/page-deposit/page-deposit.componen
 import { PersonalSmeComponent } from './pages/personal-sme/personal-sme.component';
 import { LoadingComponent } from './shared/loading/loading.component';
 import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
+import { SecureTermComponent } from './pages/loan/secure-term/secure-term.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'signup', pathMatch: 'full' },
@@ -35,6 +36,7 @@ const routes: Routes =[
     { path: 'deposit', component: PageDepositComponent },
     { path: 'loading', component: LoadingComponent },
     { path: 'comingsoon', component: ComingSoonComponent },
+    { path: 'secure-term-loan', component: SecureTermComponent },
 ];
 
 @NgModule({

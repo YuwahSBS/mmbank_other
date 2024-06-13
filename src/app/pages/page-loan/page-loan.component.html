@@ -248,42 +248,94 @@
                 <h2>Savings Calculator</h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row d-flex align-items-center">
             <div class="col-md-6">
-                    <form class="contact ng-untouched ng-pristine ng-valid" novalidate="">
+                    <form class="contact" [formGroup]="form" (ngSubmit)="calculate()">
                         <div class="row">
-                            <div class="col-md-6">
-                                <input class="form-control" placeholder="First Name" type="text">
+                            <div class="col-md-12">
+                              
+                              <div class="control">
+                              <label>Type of Deposit</label>
+                              <select formControlName="depositType" class="form-control" [ngClass]="{
+                                'is-invalid' : submitted && f['depositType'].errors }" (change)="changedepositType($event)" [(ngModel)]="depositType">
+                                <option value="" disabled selected>Deposit Type</option>
+                                <option *ngFor="let deposittype of deposit_Type" [ngValue]="deposittype">{{deposittype}}</option>
+                              </select>
+                              <div *ngIf="submitted && f['depositType'].errors" class="invalid-feedback">
+                                <div *ngIf="f['depositType'].errors['required']">Deposit Type is required.</div>
+                              </div>
                             </div>
-                            <div class="col-md-6">
-                                <input class="form-control" placeholder="Last Name" type="text">
+                              </div>
+                            <!-- <div class="col-md-6">
+                              <div class="control">
+                              <select formControlName="highSavingAcc" id="languages" class="form-control" 
+                              [ngClass]="{'is-invalid' : submitted && f['highSavingAcc'].errors }" (change)="changehighSavingacc($event)">
+                                <option value="" disabled selected>High Yield Saving Accounts</option>
+                                <option *ngFor="let highSavingacc of highSaving_Acc" [ngValue]="highSaving_Acc">{{highSavingacc}}</option>
+                              </select>
+                              <div *ngIf="submitted && f['highSavingAcc'].errors" class="invalid-feedback">
+                                <div *ngIf="f['highSavingAcc'].errors['required']">High Yield Saving Accounts is required.</div>
+                              </div>
                             </div>
+                            </div> -->
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <input class="form-control" placeholder="Enter Deposit Amount" type="text">
-                            </div>
+                              <div class="control">
+                                <label>Deposit Amount</label>
+                                  <input class="form-control" placeholder="Enter Your Deposit Amount" type="text" formControlName="depositAmt" 
+                                  [ngClass]="{'is-invalid' : submitted && f['depositAmt'].errors }"/>
+                                  <div *ngIf="submitted && f['depositAmt'].errors" class="invalid-feedback">
+                                    <div *ngIf="f['depositAmt'].errors['required']">Deposit Amount is required.</div>
+                                  </div>
+                              </div>
+                          </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <input class="form-control" placeholder="Enter Interest Rate" type="text">
+                        <!-- <div class="row">
+                          <div class="col-md-12">
+                            <div class="control">
+                                <input class="form-control" placeholder="Enter Interest Rate" type="text" formControlName="interestRate"
+                                [ngClass]="{'is-invalid' : submitted && f['interestRate'].errors }">
+                                <div *ngIf="submitted && f['interestRate'].errors" class="invalid-feedback">
+                                  <div *ngIf="f['interestRate'].errors['required']">Interest Rate is required.</div>
+                                </div>
                             </div>
-                        </div>
+                          </div>
+                        </div> -->
                         <div class="row">
-                            <div class="col-md-12">
-                                <input class="form-control" placeholder="Enter Duration in months" type="text">
+                          <div class="col-md-12">
+                            <div class="control">
+                              <label>Duration in months</label>
+                                <input class="form-control" placeholder="Enter Duration in months" type="text" formControlName="durationMth"
+                                [ngClass]="{'is-invalid' : submitted && f['durationMth'].errors }">
+                                <div *ngIf="submitted && f['durationMth'].errors" class="invalid-feedback">
+                                  <div *ngIf="f['durationMth'].errors['required']">Duration in Months is required.</div>
+                                </div>
                             </div>
+                          </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <button class="btn btn-primary btn-block">Calculate </button>
+                                <button type="submit" class="btn btn-primary btn-block" [disabled]="loading"
+                                (click)="sendMessage()"> 
+                                <span *ngIf="!loading">Calculate</span>
+                                <span *ngIf="loading" class="spinner-border spinner-border-sm"></span>
+                              </button>
+                            </div>
+                            <div class="col-md-4">
+                              <button type="submit" class="btn btn-primary btn-outline-info"
+                                (click)="reset()">
+                                Reset
+                              </button>
                             </div>
                         </div>
                     </form>
+                    
             </div>
             <div class="col-md-6">
                 <div class="interest-cal">
-                    
+                  <div class="finalamt" *ngIf="!final_amt">_</div>
+                    <div class="finalamt">{{final_amt}} <span *ngIf="final_amt">Ks</span></div>
                 </div>
             </div>
         </div>

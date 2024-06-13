@@ -1,0 +1,210 @@
+<app-navbar></app-navbar>
+<div class="page-header min-vh-100" style="background-image: url(../../../assets/img/loan-cover.png);" loading="lazy">
+    <span class="mask bg-gradient-dark opacity-5"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
+            <p class="text-white opacity-8 lead pe-5 me-5">Personal Loan / Secured Term Loan</p>
+          <h1 class="text-white mb-4">Secured Personal Term Loan with Pledged Immovable Properties</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section class="">
+    <div class="container">
+        <div class="loan-fact">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Why you will love this</h3>
+                    <ul class="listone">
+                        <li>Attractive Interest Rate</li>
+                        <li>Flexible repayment plan</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Who can apply</h3>
+                    <ul class="listone">
+                        <li>Individuals with qualified immovable properties seeking for flexible repayment plan during the term of the loan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="inner bg-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="text-white" style="position:relative;z-index: 1;">Benefits</h2>
+                <img class="animate-center" src="../../../assets/img/animation-blue.gif" alt="" style="height:70px !important;">  
+                <p>Loreump isump kerio gerrio sadnefer ioperq seriover gderiops aderm</p>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <!-- <div class="col-md-4">
+               <div class="benefit">
+                    <img src="../../../assets/img/loanicon1.png" alt="">
+                    <h3>Flexible Repayment Plan</h3>
+                    <p>Can arrange the interest repayment during the course at your flexibility and principal repayment at the completion of the course</p>
+               </div>
+            </div> -->
+            <div class="col-md-4">
+                <div class="benefit">
+                     <img src="../../../assets/img/loanicon1.png" alt="">
+                     <h3>Attractive Rate of Interest</h3>
+                     <p>Interest and Loan amount will be as favorable as the quality and value of your pledged immovable property</p>
+                </div>
+             </div>
+             <div class="col-md-4">
+                <div class="benefit">
+                     <img src="../../../assets/img/loanicon1.png" alt="">
+                     <h3>Flexible Repayment</h3>
+                     <p>Can arrange the repayment of interest and principal on your cashflow flexibility</p>
+                </div>
+             </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="inner">
+    <div class="container">
+        <div class="row text-center justify-content-center">
+            <div class="col-lg-6">
+            <p style="margin-bottom:30px;" class="sub-head">BEFORE YOU APPLY</p>
+            </div>
+        </div>
+        <div class="row text-center justify-content-center">
+            <div class="col-lg-8">
+              
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" [class.active]="activeTab === 'fees'" (click)="selectTab('fees')">
+                    Fees & Charges 
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" [class.active]="activeTab === 'eli'" (click)="selectTab('eli')">
+                    Egilibility Requirements 
+                    </a>
+                  </li>
+                  </ul>
+                  
+              
+            </div>
+        </div>
+          <div class="tab-content mt-3">
+            <div *ngIf="activeTab === 'fees'">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6">
+                        <ul class="listtwo">
+                            <li>
+                                <div class="d-flex">
+                                    <div>
+                                        Interest Rate
+                                    </div>
+                                    <div>As low as 10% per annum</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex">
+                                    <div>
+                                        Service Charge
+                                    </div>
+                                    <div>1% - 2%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex">
+                                    <div>
+                                        Extension Fee
+                                    </div>
+                                    <div>1%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../../../assets/img/fees.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="activeTab === 'eli'"><div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <ul class="listtwo">
+                        <li>Copy of admission letter of the Institute/University along with Fees schedule, course duration and fees.</li>
+                        <li>Copy of NRC Card and household registration.</li>
+                        <li>Letter from town council with the remark saying for loan application.</li>
+                        <li>For employees, recommendation letter from employer for verification of current designation, salary and updated pay slips.</li>
+                        <li>For self-employed, most recent audited financial statements for the company owned or company license.</li>
+                        <li>Business must be registered in Myanmar</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="../../../assets/img/fees.png" alt="">
+                </div>
+            </div></div>
+          </div>
+        </div>
+  </section>
+
+  <section class="inner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="sub-head">PERSONAL LOANS</p>
+                <h2>Other Related Products</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+              <div class="item">
+                <img src="../../../assets/img/loan1.png" />
+                <div class="title-info">
+                  <h2>Cash Unlock</h2>
+                  <p>Finance your urgent needs without subsidizing any interest on your deposit</p>
+                  <a class="explore" href="loan">Explore detail
+                    <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="" class="bx-fade-right">
+                  </a>
+                </div>
+                  
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="item">
+                <img src="../../../assets/img/loan2.png" />
+                <div class="title-info">
+                  <h2>Gold Financing</h2>
+                  <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                  <a class="explore" href="loan">Explore detail
+                    <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="" class="bx-fade-right">
+                  </a>
+                </div>
+                  
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="item">
+                <img src="../../../assets/img/loan3.png" />
+                <div class="title-info">
+                  <h2>Education Loan</h2>
+                  <p>High Deposit Balance with normal rate for day to day business porposes</p>
+                  <a class="explore" href="loan">Explore detail
+                    <img src="../../../assets/img/arrow-icon.png" style="width: 16px; height:11px;" alt="" class="bx-fade-right">
+                  </a>
+                </div>
+                  
+              </div>
+            </div>
+          </div>
+    </div>
+  </section>
+
+
+
+    <div class="container">
+        <inner-footer></inner-footer>
+    </div>
+
+ 
